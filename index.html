@@ -15,7 +15,9 @@
     --line:#e7e1d8;
   }
 
-  *{box-sizing:border-box;}
+  *{
+    box-sizing:border-box;
+  }
 
   body{
     margin:0;
@@ -23,6 +25,7 @@
     background:var(--bg);
     color:var(--text);
     line-height:1.6;
+    text-align:center;
   }
 
   /* HEADER */
@@ -40,26 +43,20 @@
     width:auto;
   }
 
-  .cta-top{
-    font-size:34px;
-    font-weight:700;
-    color:var(--accent);
-    text-align:center;
-    line-height:1.1;
-  }
-
   /* HERO */
   .hero{
     padding:18px 28px 30px;
     max-width:900px;
     margin:auto;
-    text-align:center;
   }
 
   h1{
     font-size:46px;
-    margin:10px 0 10px;
+    margin:10px auto;
     font-weight:600;
+    max-width:700px;
+    line-height:1.2;
+    text-align:center;
   }
 
   .subtitle{
@@ -126,6 +123,10 @@
     border:1px solid var(--line);
     border-radius:14px;
     padding:16px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
   }
 
   .card h3{
@@ -145,6 +146,7 @@
     border:1px solid var(--line);
     border-radius:14px;
     padding:16px;
+    text-align:center;
   }
 
   .highlight{
@@ -152,7 +154,7 @@
     font-weight:600;
   }
 
-  /* CONTACT */
+  /* FOOTER */
   footer{
     padding:28px;
     text-align:center;
@@ -171,66 +173,106 @@
 </header>
 
 <div class="hero">
-  <h1>Honest care for the cars your family depends on.</h1>
+
+  <h1>
+    Honest care for the cars<br>
+    your family depends on.
+  </h1>
+
   <p class="subtitle">
     Diagnostics, maintenance, and repair delivered with clarity, respect, and experience.
     We treat every vehicle like it belongs to our own family.
   </p>
 
   <div class="cta-row">
-    <a class="btn primary" href="#">Call Now: (000) 000-0000</a>
-    <a class="btn" href="#">Book Appointment</a>
-    <a class="btn" href="#">Directions</a>
+
+    <a class="btn primary" href="#">
+      Call Now: (000) 000-0000
+    </a>
+
+    <a class="btn" href="#">
+      Book Appointment
+    </a>
+
+    <a class="btn" href="#">
+      Directions
+    </a>
+
   </div>
+
 </div>
 
 <section>
+
   <h2>Shop Overview</h2>
+
   <div class="shop-image">
-  <img src="conceptview.jpeg" alt="Aron's Auto Shop" style="width:100%; max-width:100%; height:auto; object-fit:cover; border-radius:16px;">
+    <img src="conceptview.jpeg" alt="Aron's Auto Shop">
   </div>
+
 </section>
 
 <section>
+
   <h2>Services</h2>
+
   <div class="grid">
+
     <div class="card">
       <h3>Diagnostics</h3>
-      <p>Accurate problem detection using modern tools and experience.</p>
+      <p>
+        Accurate problem detection using modern tools and experience.
+      </p>
     </div>
 
     <div class="card">
       <h3>Maintenance</h3>
-      <p>Oil changes, brakes, fluids, and routine family vehicle care.</p>
+      <p>
+        Oil changes, brakes, fluids, and routine family vehicle care.
+      </p>
     </div>
 
     <div class="card">
       <h3>Repairs</h3>
-      <p>Reliable repairs focused on safety, performance, and longevity.</p>
+      <p>
+        Reliable repairs focused on safety, performance, and longevity.
+      </p>
     </div>
+
   </div>
+
 </section>
 
 <section>
+
   <h2>Why Choose Us</h2>
+
   <div class="about">
     <p>
       We believe auto repair should be simple, honest, and stress-free.
       No pressure. No confusion. Just dependable work and clear communication.
+
       <br><br>
-      <span class="highlight">We take care of your car like it belongs to our own family.</span>
+
+      <span class="highlight">
+        We take care of your car like it belongs to our own family.
+      </span>
     </p>
   </div>
+
 </section>
 
 <section>
+
   <h2>Contact</h2>
+
   <div class="card">
     <p><strong>Phone:</strong> (000) 000-0000</p>
     <p><strong>Email:</strong> contact@aronsauto.com</p>
     <p><strong>Address:</strong> 123 Main Street, Your City, PA</p>
     <p><strong>Hours:</strong> Mon–Fri 8am–6pm | Sat 9am–2pm</p>
   </div>
+
 </section>
 
 <footer>
