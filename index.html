@@ -24,17 +24,19 @@
     line-height:1.6;
   }
 
-  header{
-    padding:22px 28px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-  }
+ header{
+  padding:30px 28px;            /* spacing around header */
+  display:flex;                  /* enable flex layout */
+  justify-content:center;        /* center horizontally */
+  align-items:center;            /* center vertically */
+  flex-direction:column;         /* stack logo and tagline */
+  gap:12px;                      /* space between logo and tagline */
+}
 
-  .logo-box img{
-    height:50px;
-    width:auto;
-  }
+.logo-box img{
+  height:120px;                  /* larger logo size */
+  width:auto;                     /* keep aspect ratio */
+}
 
   .cta-top{
     font-size:14px;
