@@ -1,10 +1,224 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Aron's Auto</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>ARON'S AUTO</title>
+
+<style>
+  :root{
+    --bg:#f7f5f2;
+    --card:#ffffff;
+    --text:#1f1f1f;
+    --muted:#6b6b6b;
+    --accent:#8b6f4e;
+    --line:#e7e1d8;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+  }
+
+  header{
+    padding:22px 28px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+
+  /* LOGO PLACEHOLDER */
+  .logo-box{
+    width:140px;
+    height:44px;
+    border:1px dashed var(--line);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+    color:var(--muted);
+    font-size:12px;
+    letter-spacing:1px;
+  }
+
+  .cta-top{
+    font-size:14px;
+    color:var(--accent);
+  }
+
+  .hero{
+    padding:80px 28px 60px;
+    max-width:1000px;
+    margin:auto;
+  }
+
+  h1{
+    font-size:42px;
+    margin:0 0 12px;
+    font-weight:600;
+  }
+
+  .subtitle{
+    color:var(--muted);
+    font-size:18px;
+    max-width:600px;
+  }
+
+  .cta-row{
+    margin-top:28px;
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+
+  .btn{
+    padding:12px 16px;
+    border:1px solid var(--line);
+    background:var(--card);
+    border-radius:10px;
+    text-decoration:none;
+    color:var(--text);
+    font-size:14px;
+  }
+
+  .btn.primary{
+    background:var(--accent);
+    color:white;
+    border:none;
+  }
+
+  section{
+    max-width:1000px;
+    margin:0 auto;
+    padding:40px 28px;
+  }
+
+  /* SHOP IMAGE PLACEHOLDER */
+  .shop-image{
+    width:100%;
+    height:260px;
+    border:1px dashed var(--line);
+    border-radius:16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--muted);
+    margin-top:18px;
+    background:linear-gradient(135deg, #faf8f5, #f1ede7);
+    font-size:14px;
+  }
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:16px;
+  }
+
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:18px;
+  }
+
+  .card h3{margin:0 0 8px;font-size:16px;}
+  .card p{margin:0;color:var(--muted);font-size:14px;}
+
+  .about{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:22px;
+  }
+
+  footer{
+    padding:40px 28px;
+    text-align:center;
+    color:var(--muted);
+    font-size:13px;
+  }
+
+  .highlight{color:var(--accent);font-weight:500;}
+</style>
 </head>
+
 <body>
-  <h1>Welcome to Aron's Auto!</h1>
-  <p>Your site is live on Cloudflare.</p>
+
+<header>
+  <div class="logo-box">LOGO PLACEHOLDER</div>
+  <div class="cta-top">Trusted Family Auto Care</div>
+</header>
+
+<div class="hero">
+  <h1>Honest care for the cars your family depends on.</h1>
+  <p class="subtitle">
+    Diagnostics, maintenance, and repair done with attention, clarity, and respect.
+    We treat every vehicle like it belongs to our own family.
+  </p>
+
+  <div class="cta-row">
+    <a class="btn primary" href="#">Call Now: (000) 000-0000</a>
+    <a class="btn" href="#">Book Appointment</a>
+    <a class="btn" href="#">Get Directions</a>
+  </div>
+</div>
+
+<section>
+  <h2>Shop Overview</h2>
+  <div class="shop-image">
+    SHOP IMAGE PLACEHOLDER (Exterior or Garage Photo)
+  </div>
+</section>
+
+<section>
+  <h2>Services</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Diagnostics</h3>
+      <p>Clear, honest identification of vehicle issues using modern tools and experience.</p>
+    </div>
+
+    <div class="card">
+      <h3>Maintenance</h3>
+      <p>Oil changes, fluid checks, brakes, and routine care to keep you moving safely.</p>
+    </div>
+
+    <div class="card">
+      <h3>Repairs</h3>
+      <p>Reliable repair work focused on long-term safety and performance.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Why Drivers Trust ARON'S AUTO</h2>
+  <div class="about">
+    <p>
+      We believe car repair should feel simple and honest. No confusion, no pressure—just clear communication
+      and dependable work. Our goal is long-term relationships, not one-time visits.
+      <br><br>
+      <span class="highlight">We take care of your car like it belongs to our own family.</span>
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <div class="card">
+    <p><strong>Phone:</strong> (000) 000-0000</p>
+    <p><strong>Email:</strong> contact@aronsauto.com</p>
+    <p><strong>Address:</strong> 123 Main Street, Your City, PA</p>
+    <p><strong>Hours:</strong> Mon–Fri 8am–6pm | Sat 9am–2pm</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 ARON'S AUTO — Honest work. Reliable results.
+</footer>
+
 </body>
 </html>
