@@ -15,7 +15,7 @@
     --line:#e7e1d8;
   }
 
-  *{box-sizing:border-box}
+  *{box-sizing:border-box;}
   body{
     margin:0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
@@ -31,18 +31,9 @@
     align-items:center;
   }
 
-<img src="logo1.jpeg" alt="Aron's Auto Logo" style="height:60px; width:auto;">
-  .logo-box{
-    width:140px;
-    height:44px;
-    border:1px dashed var(--line);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border-radius:10px;
-    color:var(--muted);
-    font-size:12px;
-    letter-spacing:1px;
+  .logo-box img{
+    height:50px;
+    width:auto;
   }
 
   .cta-top{
@@ -54,6 +45,7 @@
     padding:80px 28px 60px;
     max-width:1000px;
     margin:auto;
+    text-align:center;
   }
 
   h1{
@@ -66,6 +58,7 @@
     color:var(--muted);
     font-size:18px;
     max-width:600px;
+    margin:auto;
   }
 
   .cta-row{
@@ -73,6 +66,7 @@
     display:flex;
     gap:12px;
     flex-wrap:wrap;
+    justify-content:center;
   }
 
   .btn{
@@ -97,19 +91,12 @@
     padding:40px 28px;
   }
 
-  /* SHOP IMAGE PLACEHOLDER */
-  .shop-image{
+  .shop-image img{
     width:100%;
     height:260px;
-    border:1px dashed var(--line);
+    object-fit:cover;
     border-radius:16px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:var(--muted);
-    margin-top:18px;
-    background:linear-gradient(135deg, #faf8f5, #f1ede7);
-    font-size:14px;
+    border:1px solid var(--line);
   }
 
   .grid{
@@ -149,7 +136,9 @@
 <body>
 
 <header>
-  <div class="logo-box">LOGO PLACEHOLDER</div>
+  <div class="logo-box">
+    <img src="logo1.jpeg" alt="Aron's Auto Logo">
+  </div>
   <div class="cta-top">Trusted Family Auto Care</div>
 </header>
 
@@ -169,8 +158,8 @@
 
 <section>
   <h2>Shop Overview</h2>
-  <div class="shop-image" style="height:400px;">
-     <img src="shopview.jpeg" alt="Aron's Auto Shop Exterior" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+  <div class="shop-image">
+    <img src="shopview.jpeg" alt="Aron's Auto Shop">
   </div>
 </section>
 
